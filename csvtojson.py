@@ -2,7 +2,7 @@ import csv
 import sys
 import json
 
-#EDIT THIS LIST WITH YOUR REQUIRED JSON KEY NAMES
+
 fieldnames=["timestamp","channel 1","channel 2"]
 
 def convert(filename):
