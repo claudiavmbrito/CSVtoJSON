@@ -21,4 +21,4 @@ def convert(filename):
       jsonf.close()
 
 if __name__=="__main__":
-  convert(sys.argv[1:])
+  conversor(sys.argv[1:])
