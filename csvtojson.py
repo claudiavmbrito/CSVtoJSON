@@ -13,8 +13,10 @@ def convert(filename):
     json_filename = csv_filename.split(".")[0]+".json"
     print("Saving JSON to file: " + json_filename)
     with open(json_filename,'w') as jsonf:
-      data = json.dumps([r for r in csv_reader])
-      jsonf.write(data)
+      for r in csv_reader:
+        data = json.dumps(r)
+        jsonf.write(data)
+      
       f.close()
       jsonf.close()
 
