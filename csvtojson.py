@@ -5,7 +5,7 @@ import json
 
 fields=["timestamp","channel 1","channel 2"]
 
-def convert(filename):
+def conversor(filename):
   csv_filename = filename[0]
   print("Opening CSV file: " + csv_filename)
   with open(csv_filename, 'r') as f:
